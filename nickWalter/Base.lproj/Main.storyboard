@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nickWalter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cM9-gV-nJL">
+                                <rect key="frame" x="16" y="28" width="343" height="73"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bx-ZW-Fir">
+                                <rect key="frame" x="120" y="171" width="135" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="irD-uV-vQc"/>
+                                </constraints>
+                                <state key="normal" title="Tap Me!"/>
+                                <connections>
+                                    <action selector="buttonTapped1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hA2-7j-w6Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lm-Zd-XZF">
+                                <rect key="frame" x="120" y="278" width="135" height="41"/>
+                                <state key="normal" title="Tap Mee 2!"/>
+                                <connections>
+                                    <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gf7-PF-aLe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cM9-gV-nJL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6GT-aX-1Bl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Lm-Zd-XZF" secondAttribute="bottom" constant="348" id="GKB-0p-jKx"/>
+                            <constraint firstItem="3Lm-Zd-XZF" firstAttribute="top" secondItem="6Bx-ZW-Fir" secondAttribute="bottom" constant="61" id="Ri7-gd-Aic"/>
+                            <constraint firstItem="6Bx-ZW-Fir" firstAttribute="centerX" secondItem="cM9-gV-nJL" secondAttribute="centerX" id="U7b-rp-IDa"/>
+                            <constraint firstItem="cM9-gV-nJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="X1i-Lb-rs1"/>
+                            <constraint firstItem="cM9-gV-nJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="XDU-bK-yjV"/>
+                            <constraint firstItem="3Lm-Zd-XZF" firstAttribute="leading" secondItem="6Bx-ZW-Fir" secondAttribute="leading" id="Y4B-4x-Ub0"/>
+                            <constraint firstItem="3Lm-Zd-XZF" firstAttribute="trailing" secondItem="6Bx-ZW-Fir" secondAttribute="trailing" id="YRW-SN-IXG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cM9-gV-nJL" secondAttribute="bottom" constant="566" id="ZqL-Ts-AqU"/>
+                            <constraint firstItem="cM9-gV-nJL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dag-oa-dTZ"/>
+                            <constraint firstItem="6Bx-ZW-Fir" firstAttribute="top" secondItem="cM9-gV-nJL" secondAttribute="bottom" constant="70" id="eRn-u8-r5X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Bx-ZW-Fir" secondAttribute="bottom" constant="450" id="nzP-Ii-6n5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helloWorld" destination="cM9-gV-nJL" id="MWq-q0-GR1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
