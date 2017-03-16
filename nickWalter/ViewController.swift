@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var text1: UITextField!
     
     @IBOutlet var text2: UITextField!
@@ -19,7 +19,14 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped1(_ sender: Any) {
         
-    helloWorldLabel.text = "The answer is... \(Double(text1.text!)! + Double(text2.text!)!)"
+        let addition = false
+        
+        if addition {
+            
+            helloWorldLabel.text = "The answer is... \(Double(text1.text!)! + Double(text2.text!)!)"
+        }else {
+            helloWorldLabel.text = "The answer is \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
         
         
     }
@@ -30,12 +37,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
