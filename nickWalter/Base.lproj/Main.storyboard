@@ -38,32 +38,45 @@
                                     <action selector="buttonTapped1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hA2-7j-w6Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lm-Zd-XZF">
-                                <rect key="frame" x="120" y="278" width="135" height="41"/>
-                                <state key="normal" title="Tap Mee 2!"/>
-                                <connections>
-                                    <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gf7-PF-aLe"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7a8-aP-JeE">
+                                <rect key="frame" x="139" y="257" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Mtl-Kp-XXE"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHW-tS-iD9">
+                                <rect key="frame" x="139" y="327" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="ynR-GN-96t"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cM9-gV-nJL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6GT-aX-1Bl"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Lm-Zd-XZF" secondAttribute="bottom" constant="348" id="GKB-0p-jKx"/>
-                            <constraint firstItem="3Lm-Zd-XZF" firstAttribute="top" secondItem="6Bx-ZW-Fir" secondAttribute="bottom" constant="61" id="Ri7-gd-Aic"/>
+                            <constraint firstItem="pHW-tS-iD9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BDM-sy-Dsz"/>
+                            <constraint firstItem="pHW-tS-iD9" firstAttribute="top" secondItem="7a8-aP-JeE" secondAttribute="bottom" constant="40" id="Tn5-rk-08d"/>
                             <constraint firstItem="6Bx-ZW-Fir" firstAttribute="centerX" secondItem="cM9-gV-nJL" secondAttribute="centerX" id="U7b-rp-IDa"/>
                             <constraint firstItem="cM9-gV-nJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="X1i-Lb-rs1"/>
                             <constraint firstItem="cM9-gV-nJL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="XDU-bK-yjV"/>
-                            <constraint firstItem="3Lm-Zd-XZF" firstAttribute="leading" secondItem="6Bx-ZW-Fir" secondAttribute="leading" id="Y4B-4x-Ub0"/>
-                            <constraint firstItem="3Lm-Zd-XZF" firstAttribute="trailing" secondItem="6Bx-ZW-Fir" secondAttribute="trailing" id="YRW-SN-IXG"/>
+                            <constraint firstItem="7a8-aP-JeE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yai-t5-CR8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cM9-gV-nJL" secondAttribute="bottom" constant="566" id="ZqL-Ts-AqU"/>
                             <constraint firstItem="cM9-gV-nJL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dag-oa-dTZ"/>
                             <constraint firstItem="6Bx-ZW-Fir" firstAttribute="top" secondItem="cM9-gV-nJL" secondAttribute="bottom" constant="70" id="eRn-u8-r5X"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Bx-ZW-Fir" secondAttribute="bottom" constant="450" id="nzP-Ii-6n5"/>
+                            <constraint firstItem="7a8-aP-JeE" firstAttribute="top" secondItem="6Bx-ZW-Fir" secondAttribute="bottom" constant="40" id="yPR-XA-sTy"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="helloWorld" destination="cM9-gV-nJL" id="MWq-q0-GR1"/>
+                        <outlet property="helloWorldLabel" destination="cM9-gV-nJL" id="y2W-iC-tZO"/>
+                        <outlet property="text1" destination="7a8-aP-JeE" id="sZb-5V-OBa"/>
+                        <outlet property="text2" destination="pHW-tS-iD9" id="bcM-Vw-uEz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
